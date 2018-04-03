@@ -1,5 +1,5 @@
 # Simple-CLF-GAN
-MNIST generator and classifier
+MNIST generator and classifier</br>
 Generative Adversarial Network generates MNIST digits using 2 simple feed forward neural networks for discriminator and generator. Each digit is then classified by basic (1 hidden layer) MNIST classifier.
 
 ## Examples of generated images:
