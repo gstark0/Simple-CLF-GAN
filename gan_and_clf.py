@@ -4,6 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import scipy.misc
 import time
+import os
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
 n_hidden_nodes = 128 # Number of hidden nodes for generator and discriminator
@@ -97,7 +98,9 @@ with tf.Session() as sess:
 	print('Classifier trained, accuracy: %s' % acc)
 	time.sleep(5)
 	print('Generating new images using GAN...')
-
+	
+	if not os.path.exists('output/'):
+		os.makedirs('output/')
 	for epoch in range(epochs):
 		batch = mnist.train.next_batch(batch_size)[0]
 		sess.run(d_optimizer, {x_placeholder: batch, z_placeholder: sample_z(batch_size, z_dim)})
