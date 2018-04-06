@@ -19,3 +19,16 @@ Generative Adversarial Network generates MNIST digits using 2 simple feed forwar
 ![alt text](https://raw.githubusercontent.com/gstark0/Simple-CLF-GAN/master/examples/74500.jpg)
 ![alt text](https://raw.githubusercontent.com/gstark0/Simple-CLF-GAN/master/examples/75500.jpg)
 ![alt text](https://raw.githubusercontent.com/gstark0/Simple-CLF-GAN/master/examples/80500.jpg)
+
+## How to run?
+In order to run this script, you will need the following dependencies:
+
+- TensorFlow
+- SciPy
+- Matplotlib
+
+Then, just run the script with python:
+
+    python gan_and_clf.py
+
+The script will automatically start training the model. For every 500 steps, new image will be generated to 'output' folder.
