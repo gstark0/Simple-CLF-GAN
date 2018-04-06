@@ -31,4 +31,4 @@ Then, just run the script with python:
 
     python gan_and_clf.py
 
-The script will automatically start training the model. For every 500 steps, new image will be generated to `output` folder.
+The script will automatically start training the model. For every 500 steps, new image will be generated and saved to `output` folder.
